@@ -1,20 +1,34 @@
-import "./App.css";
-import { Btn, CardUser } from "./components";
+import './App.css'
+import Btn from './components/Btn/Btn'
+import CardUser from './components/CardUser/CardUser'
 
 function App() {
+
   return (
     <>
-      <Btn texto="salvar" corDeFundo="green" />
-      <Btn texto="editar" corDeFundo="yellow" />
-      <Btn texto="deletar" corDeFundo="red" />
+      <Btn texto='Salvar' corDeFundo='green'/>
+      <Btn texto='Editar' corDeFundo='yellow'/>
+      <Btn texto='Excluir' corDeFundo='red'/>
 
-      <CardUser
-        foto="https://i.pinimg.com/1200x/bb/49/f9/bb49f99b18fa61858f461514bdf94df4.jpg"
-        nome="Cookie Monster"
-        cargo="Monstro"
+      <CardUser 
+        nome='Joao'
+        cargo='Gerente'
+        foto='https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      />
+
+        <CardUser 
+        nome='Mario'
+        cargo='Dono'
+        foto='https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
+      />
+
+        <CardUser 
+        nome='Joao'
+        cargo='Gerente'
+        foto='https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'
       />
     </>
-  );
+  )
 }
 
-export default App;
+export default App
