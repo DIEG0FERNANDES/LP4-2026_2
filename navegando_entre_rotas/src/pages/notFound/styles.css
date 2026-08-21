@@ -1,0 +1,20 @@
+.notFound-Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f5f5dc;
+  padding: 2rem;
+}
+
+.notFound-subtitle {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.notFound-btn {
+  background-color: #2e7d32;
+  color: white;
+  padding: 0.8rem 1.5rem;
+}

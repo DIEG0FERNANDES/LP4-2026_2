@@ -1,23 +1,24 @@
 import { use, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Login.css";
+import "./Login.css"
 
 function Login() {
+
   //hooks
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState("");
+  const [error, setError] = useState("")
   const navigate = useNavigate();
 
   const handleLogin = (e: any) => {
     e.preventDefault();
 
-    if (email && password) {
+    if(email && password){
       navigate("/home");
-      console.log("Login realizado com sucesso");
+      console.log('Login realizado com sucesso');
     }
-  };
-  return (
+  }
+  return(
     <>
       <div className="login-container">
         <div className="login-card">
@@ -26,11 +27,11 @@ function Login() {
           <form onSubmit={handleLogin} className="login-form">
             <div className="login-input-group">
               <label htmlFor="email" className="login-label">
-                E-mail
+                  E-mail
               </label>
 
-              <input
-                type="email"
+              <input 
+                type="email" 
                 id="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -41,11 +42,11 @@ function Login() {
 
             <div className="login-input-group">
               <label htmlFor="password" className="login-label">
-                Senha
+                  Senha
               </label>
 
-              <input
-                type="password"
+              <input 
+                type="password" 
                 id="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
@@ -54,6 +55,7 @@ function Login() {
               />
             </div>
 
+
             <button type="submit" className="login-button">
               Entrar
             </button>
@@ -61,7 +63,7 @@ function Login() {
         </div>
       </div>
     </>
-  );
+  )
 }
 
 export default Login;

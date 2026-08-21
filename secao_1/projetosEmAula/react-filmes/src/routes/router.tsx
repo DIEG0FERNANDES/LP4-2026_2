@@ -1,17 +1,15 @@
 import type { RouteObject } from "react-router-dom";
-import { About, Home, Login, NotFound } from "../pages";
+import { Home } from "../pages";
+import NotFound from "../pages/NotFound";
+import About from "../pages/About";
 
-export const routes: RouteObject[] = [
+const routes: RouteObject[] = [
   {
     path: "/",
-    element: <Login />,
-  },
-  {
-    path: "home",
     element: <Home />,
   },
   {
-    path: "about",
+    path: "/about",
     element: <About />,
   },
   {
@@ -19,3 +17,5 @@ export const routes: RouteObject[] = [
     element: <NotFound />,
   },
 ];
+
+export default routes;
