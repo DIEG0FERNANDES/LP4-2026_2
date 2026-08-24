@@ -3,14 +3,12 @@ const Header = () => {
   return (
     <>
       <div className="header">
-        FILMES
+        <a href="/" className="title">
+          FILMES
+        </a>
         <nav>
-          <button>
-            <a href="/">Inicio</a>
-          </button>
-          <button>
-            <a href="/about">Sobre</a>
-          </button>
+          <a href="/">Inicio</a>
+          <a href="/listaFilmes">Lista</a>
         </nav>
       </div>
     </>

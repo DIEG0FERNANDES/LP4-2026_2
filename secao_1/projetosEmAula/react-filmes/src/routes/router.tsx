@@ -1,5 +1,5 @@
 import type { RouteObject } from "react-router-dom";
-import { About, Home, NotFound } from "../pages";
+import { Home, ListaFilmes, NotFound } from "../pages";
 
 const routes: RouteObject[] = [
   {
@@ -7,8 +7,8 @@ const routes: RouteObject[] = [
     element: <Home />,
   },
   {
-    path: "/about",
-    element: <About />,
+    path: "/listaFilmes",
+    element: <ListaFilmes />,
   },
   {
     path: "*",
