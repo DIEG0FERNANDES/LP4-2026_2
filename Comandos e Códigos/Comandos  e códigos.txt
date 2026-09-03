@@ -1,0 +1,9 @@
+Repositório da disciplina:
+
+https://github.com/jheanbryan/LP4-TSI-2026-2
+
+Comando para criar projeto com React e TypeScript:
+
+npm create vite@latest . -- --template react-ts
+
+
